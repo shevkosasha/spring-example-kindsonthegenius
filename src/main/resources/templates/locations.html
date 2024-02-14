@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locations</title>
+</head>
+<body>
+    <ul>
+        <li th:each="location : ${locationsList}">
+            <span th:text="${location.name}">Default</span>
+        </li>
+    </ul>
+</body>
+</html>
