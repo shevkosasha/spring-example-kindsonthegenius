@@ -1,6 +1,6 @@
-package com.example.springlearnkindsonthegenius.jpaRepos;
+package com.example.socialdb.jpaRepos;
 
-import com.example.springlearnkindsonthegenius.Model.Student;
+import com.example.socialdb.Model.Student;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
@@ -8,9 +8,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.Optional;
 
 public interface StudentRepository extends CrudRepository<Student, String> {
-
-    //With this the crud methods are now available
-//    public Optional<Student> findById(String id);
 
     @Query("SELECT t.name FROM Student t where t.id = :id")
     public Optional<String> findNameById(@Param("id")String id);
@@ -24,9 +21,3 @@ public interface StudentRepository extends CrudRepository<Student, String> {
     @Query("SELECT t.id, t.name, t.department  FROM Student t where t.name = %?1%")
     public Optional<Student> findByCriteria(String criteria);
 }
-
-//import org.springframework.data.repository.CrudRepository;
-//
-//public interface StudentRepository extends CrudRepository<Student, String> {
-//
-//}

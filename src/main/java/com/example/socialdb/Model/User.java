@@ -1,4 +1,4 @@
-package com.example.springlearnkindsonthegenius.Model;
+package com.example.socialdb.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,9 +22,7 @@ public class User {
         this.email = email;
     }
 
-    public User() {
-
-    }
+    public User() {}
 
     public String getId() {
         return id;

@@ -1,7 +1,7 @@
-package com.example.springlearnkindsonthegenius.services;
+package com.example.socialdb.services;
 
-import com.example.springlearnkindsonthegenius.Model.Student;
-import com.example.springlearnkindsonthegenius.jpaRepos.StudentRepository;
+import com.example.socialdb.Model.Student;
+import com.example.socialdb.jpaRepos.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,6 @@ public class StudentService {
 
     @Autowired
     public StudentRepository studentRepository;
-    //our methods goes here
 
     public List<Student> getAllStudents() {
         List<Student> students = new ArrayList<>();

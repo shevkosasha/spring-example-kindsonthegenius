@@ -1,13 +1,12 @@
-package com.example.springlearnkindsonthegenius.controllers;
+package com.example.socialdb.controllers;
 
-import com.example.springlearnkindsonthegenius.Model.Location;
-import com.example.springlearnkindsonthegenius.services.LocationService;
+import com.example.socialdb.Model.Location;
+import com.example.socialdb.services.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -17,14 +16,7 @@ public class LocationController {
 
     @RequestMapping(value = "/locations")
     public String getAllLocations(Model model){
-        System.out.println("get all locations");
-        List<Location> locations = locationService.getAllLocations();
-        System.out.println(locations);
-        for ( Location l : locations) {
-            System.out.println(l.getId() + ", " + l.getName());
-        }
         model.addAttribute("locationsList", locationService.getAllLocations());
-
         return "locations";
     }
 //    @RequestMapping(value = "/locations")

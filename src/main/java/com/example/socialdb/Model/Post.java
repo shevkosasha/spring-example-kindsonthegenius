@@ -1,4 +1,4 @@
-package com.example.springlearnkindsonthegenius.Model;
+package com.example.socialdb.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -21,9 +21,7 @@ public class Post {
         this.details = details;
     }
 
-    public Post() {
-
-    }
+    public Post() {}
 
     public String getId() {
         return id;

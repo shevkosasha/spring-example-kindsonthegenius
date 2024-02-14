@@ -1,21 +1,23 @@
-package com.example.springlearnkindsonthegenius.Model;
+package com.example.socialdb.Model;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Location {
+public class Student {
+
     @Id
     private String id;
     private String name;
+    private String department;
 
-    public Location(String id, String name) {
+    public Student(){}
+
+    public Student(String id, String name, String department) {
         super();
         this.id = id;
         this.name = name;
-    }
-
-    public Location() {
-
+        this.department = department;
     }
 
     public String getId() {
@@ -32,5 +34,13 @@ public class Location {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }

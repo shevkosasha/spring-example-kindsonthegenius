@@ -1,12 +1,10 @@
-package com.example.springlearnkindsonthegenius.controllers;
+package com.example.socialdb.controllers;
 
-import com.example.springlearnkindsonthegenius.Model.Location;
-import com.example.springlearnkindsonthegenius.Model.User;
-import com.example.springlearnkindsonthegenius.services.UserService;
+import com.example.socialdb.services.UserService;
+import com.example.socialdb.Model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController

@@ -1,7 +1,7 @@
-package com.example.springlearnkindsonthegenius.controllers;
+package com.example.socialdb.controllers;
 
-import com.example.springlearnkindsonthegenius.Model.Student;
-import com.example.springlearnkindsonthegenius.services.StudentService;
+import com.example.socialdb.Model.Student;
+import com.example.socialdb.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
