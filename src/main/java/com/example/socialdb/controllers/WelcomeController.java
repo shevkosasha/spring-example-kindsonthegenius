@@ -1,4 +1,4 @@
-package com.example.springlearnkindsonthegenius.controllers;
+package com.example.socialdb.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
